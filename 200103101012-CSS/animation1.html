@@ -1,0 +1,89 @@
+<html>
+  <head>
+    <title>Demo CSS3</title>
+    <style type="text/css">
+      div {
+        height: 200px;
+        width: 200px;
+        transition: 3s;
+        font-size: 25px;
+        font-weight: bold;
+        color: #000000;
+        background-color: gray;
+      }
+
+      #d1:hover {
+        transform: translate(100px, 100px);
+        background-color: Blue;
+        color: Yellow;
+      }
+
+      #d2:hover {
+        transform: rotate(360deg);
+        background-color: Blue;
+        color: Yellow;
+      }
+      #d3:hover {
+        transform: rotate3d(1, 1, 0, 360deg);
+        background-color: Blue;
+        color: Yellow;
+      }
+      #d4:hover {
+        transform: skew(45deg);
+        background-color: Blue;
+        color: Yellow;
+      }
+      #d5:hover {
+        transform: scale(1.5, 0.5);
+        background-color: Blue;
+        color: Yellow;
+      }
+      #d6:hover {
+        opacity: 1;
+      }
+      #d7:hover {
+        background: rgba(128, 128, 0, 0.5);
+      }
+      #d8:hover {
+        box-shadow: 0px 0px 30px Blue;
+      }
+      #d9:hover {
+        text-shadow: 3px 3px 3px yellow;
+      }
+      #d10:hover {
+        border-radius: 50%;
+      }
+      #OverFlowDiv {
+        overflow: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="d1">Translate</div>
+    <hr />
+    <div id="d2">Rotate</div>
+    <hr />
+    <div id="d3">Rotate 3d</div>
+    <hr />
+    <div id="d4">Skew</div>
+    <hr />
+    <div id="d5">Scale</div>
+    <hr />
+    <div id="d6">Opacity</div>
+    <hr />
+    <div id="d7">RGBA</div>
+    <hr />
+    <div id="d8">Box-Shadow</div>
+    <hr />
+    <div id="d9">Text-Shadow</div>
+    <hr />
+    <div id="d10">Border Radius</div>
+    <hr />
+    <div id="overflowdiv">
+      Overflow Overflow Overflow Overflow Overflow Overflow Overflow Overflow
+      Overflow Overflow Overflow Overflow Overflow Overflow Overflow Overflow
+      Overflow Overflow Overflow
+    </div>
+    <hr />
+  </body>
+</html>

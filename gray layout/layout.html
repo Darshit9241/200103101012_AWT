@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+        display: grid;
+        grid-template-areas: "navbar navbar navbar navbar" "section section section aside" "section2 section2 section3 aside" "footer footer footer footer";
+    }
+    
+    .navbar {
+        background-color: rgba(27, 168, 38, 0.436);
+        border: 2px solid black;
+        border-radius: 12px;
+        margin: 10px 0px;
+        grid-area: navbar;
+        position: sticky;
+        top: 0;
+        left: 0;
+    }
+    
+    .navbar ul {
+        display: flex;
+    }
+    
+    .navbar ul li {
+        list-style: none;
+        text-decoration: none;
+        margin: 9px;
+    }
+    
+    .box {
+        background-color: gray;
+        border: 2px solid black;
+        border-radius: 9px;
+        padding: 10px;
+        margin: 10px 0px;
+        grid-area: section;
+    }
+    
+    aside {
+        background-color: antiquewhite;
+        border-radius: 9px;
+        padding: 10px;
+        border: 2px solid black;
+        margin: 10px 5px;
+        grid-area: aside;
+    }
+    
+    .section2 {
+        background-color: brown;
+        border-radius: 9px;
+        padding: 10px;
+        border: 2px solid black;
+        margin: 10px 5px;
+        grid-area: section2;
+    }
+    
+    .section3 {
+        background-color: burlywood;
+        border-radius: 9px;
+        padding: 10px;
+        border: 2px solid black;
+        margin: 10px 5px;
+        grid-area: section3;
+    }
+    
+    .footer {
+        grid-area: footer;
+        border: 2px solid black;
+        border-radius: 9px;
+        text-align: center;
+        background-color: skyblue;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <ul>
+                <li>Home</li>
+                <li>About us</li>
+                <li>Service</li>
+                <li>Help</li>
+            </ul>
+        </nav>
+        <section class="box">
+            <h1>This is heading</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio provident numquam ratione? Quos consequatur, voluptatum corporis voluptas labore deserunt quae quibusdam vitae, mollitia blanditiis saepe ex, quod explicabo eius ratione similiqueconsectetur
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci deleniti et autem esse id aliquid eaque commodi magnam quas facilis nulla quos illum non, libero veritatis? Vero soluta autem iusto ipsa voluptatum! Maxime praesentium placeat
+                nam? Quis debitis magni non consectetur. Architecto, dolorem quisquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure rem magnam debitis quasi reprehenderit commodi ut voluptatibus assumenda, officia itaque animi, vitae
+                praesentium possimus! Accusantium, nulla quam quaerat harum possimus ullam in numquam debitis veritatis eos, nesciunt aspernatur consequatur sint reprehenderit corrupti, iste deleniti accusamus magni molestias consectetur. Fugit a fuga
+                accusantium deleniti nobis libero nostrum amet? Sit laboriosam corrupti, at voluptas aut accusamus totam praesentium!</p>
+
+        </section>
+        <aside>
+            <h3>More details</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor quibusdam nesciunt voluptate ipsam consectetur aliquam saepe culpa in enim animi?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates iure laboriosam ad debitis?
+                Iusto quo aspernatur error quibusdam doloremque veniam pariatur fugiat iure deserunt et, animi nobis voluptatum, corrupti aliquid autem quisquam earum ipsa, ratione quaerat itaque. Soluta, id voluptatum?Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Unde necessitatibus cum dolor ipsa, quae quo? Nobis, nostrum. Voluptatem voluptas quam similique esse temporibus voluptatum quisquam molestiae numquam, sapiente dolores delectus nesciunt porro dicta debitis veritatis
+                aut neque inventore corrupti beatae quibusdam magnam, officiis Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos at ut corporis mollitia magni, dolores repellat commodi, animi voluptatem aliquam optio porro voluptatibus distinctio,
+                ipsam assumenda beatae. Accusamus iusto laudantium laboriosam alias cupiditate? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum explicabo expedita eos velit non praesentium! Dolorum, laudantium repellat odio cupiditate
+                alias et perspiciatis saepe! Ea eligendi, dicta dolore alias neque laborum, officia recusandae quaerat explicabo voluptas enim, assumenda quasi accusamus iste doloribus mollitia quos. Dolorem cupiditate eum, distinctio, provident voluptatem
+                error reprehenderit ad, sit excepturi quae dolor et consectetur eius explicabo odio perferendis nisi natus atque.
+                </ex>
+            </p>
+        </aside>
+        <section class="section2">
+            <h3>This is heading</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing lelit. Unde amet nesciunt beatae tenetur deserunt dolores at dolorum animi aliquam esse tempore repellat ullam enim repellendus, minus ipsa totam facilis eos Lorem ipsum, dolor sit amet consectetur
+                adipisicing elit. A molestiae repudiandae labore dicta debitis aperiam ducimus fuga iste, consectetur soluta assumenda quos non, deserunt voluptatum illo dignissimos. Natus unde ratione quibusdam delectus atque obcaecati voluptas iusto
+                eaque voluptates vitae amet eos non, optio eligendi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore officiis doloremque inventore vero ullam, suscipit dicta, repudiandae est ratione quis similique facere odit perferendis
+                recusandae adipisci fuga necessitatibus veniam ducimus sed! Doloribus soluta perferendis velit numquam expedita! Perspiciatis vel delectus vitae? Quibusdam neque reiciendis, nostrum similique, incidunt ea dolorum doloremque commodi recusandae,
+                optio sit accusamus a tempora eaque atque animi perspiciatis at. Neque provident facere unde a nihil officiis aut suscipit voluptatibus et consectetur. Veniam nemo voluptates, sed quaerat amet repellendus, magni, hic odio eveniet quia
+                fugiat nesciunt. Odio voluptates aut provident consequatur omnis officiis impedit consequuntur dolorem quaerat dolorum.
+            </p>
+
+        </section>
+        <section class="section3">
+            <h2>This is heading</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet aut facilis repellendus odit! Deserunt laboriosam eum sed? Esse sit voluptates voluptatibus repellat laudantium itaque harum exercitationem nobis, dolor distinctio, necessitatibus,
+                dicta minima consequuntur laborum eligendi sunt ducimus ut perferendis. Nesciunt quisquam minus consectetur eaque quia, blanditiis cupiditate hic, praesentium, atque neque labore quidem odit cumque! Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Aspernatur hic quibusdam vero dicta rerum placeat ex cum similique molestias quae ipsam atque, expedita blanditiis corrupti ullam deleniti, sed eum suscipit alias quos veritatis autem. Possimus blanditiis reprehenderit
+                eos nulla molestiae assumenda. Sunt, rem neque.</p>
+        </section>
+        <div class="footer">
+            <p>
+                FOOTER
+
+            </p>
+        </div>
+</body>
+
+</html>
