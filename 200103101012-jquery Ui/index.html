@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Accordion JQuery UI</title>
+
+    <link
+      href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script
+      src="https://code.jquery.com/jquery-1.10.2.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"
+      type="text/javascript"
+    ></script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#MyAccordion").accordion();
+      });
+      $(document).ready(function () {
+        $("#MyDOBPicker1").datepicker({
+          showWeek: true,
+          yearSuffix: "(DOB)",
+          showAnim: "slide",
+        });
+
+        $("#MyDOBPicker2").datepicker();
+        $("#MyDOBPicker2").datepicker("show");
+      });
+      $(document).ready(function(){
+              $("#MyDiv").dialog({
+                  autoOpen: true,
+               });
+              $("#MyButton").click(function () {
+                  $("#MyDiv").dialog("open");
+              });
+          });
+          $(document).ready(function() {
+              $("#AgeRangeSlider").slider({
+                  orientation:"horizontal",
+                  min: 18,
+                  max: 100,
+                  value: 18,
+                  slide: function (event, ui) {
+                      $("#AgeValue").val(ui.value);
+                  }
+              });
+              $("#AgeValue").val($("#AgeRangeSlider").slider("value"));
+
+              $("#PriceValue").slider({
+                  range: true,
+                  min: 1,
+                  max: 500,
+                  values: [1, 50],
+                  start: function (event, ui) {
+                      $("#startvalue")
+                     .val("$" + ui.values[0]);
+                  },
+                  stop: function (event, ui) {
+                      $("#endvalue")
+                     .val("$" + ui.values[1]);
+                  },
+                  change: function (event, ui) {
+                      $("#changevalue")
+                     .val("$" + ui.values[0] + " - $" + ui.values[1]);
+                  },
+                  slide: function (event, ui) {
+                      $("#slidevalue")
+                     .val("$" + ui.values[0] + " - $" + ui.values[1]);
+                  }
+              });
+          });
+           type="text/javascript">
+          $(document).ready(function () {
+              $("#MyValueList").spinner();
+          });
+      </script>
+      </script>
+    </script>
+
+    <style type="text/css">
+      #MyAccordion {
+        font-size: 14px;
+        width: 50%;
+      }
+      #MyAccordion div {
+        background: #676161;
+      }
+      #AgeValue
+            {
+                width:40px;
+                height:30px;
+                font-size:large;
+                font-weight:bold;
+                color:Red;
+            }
+            #AgeRangeSlider,#PriceValue
+            {
+                width:300px;
+            }
+            #startvalue,#endvalue,#changevalue,#slidevalue
+            {
+                width:150px;
+                height:30px;
+                font-size:large;
+                font-weight:bold;
+                color:Navy;
+            }
+            #MyValueList input 
+         {
+             width: 100px;
+             color:Navy;
+             font-weight:bold;
+         }
+      
+    </style>
+  </head>
+
+  <body>
+    <div id="MyAccordion">
+      <h3>Tab 1</h3>
+      <div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut iure
+          officiis sequi quis voluptate magni quam repudiandae ducimus quisquam
+          rerum, ex numquam laboriosam cumque. Eaque natus eveniet, id officia
+          earum nihil dolorum, quasi aliquam non quaerat, optio delectus
+          voluptate expedita quae fugit velit totam numquam. Cum aut quod ipsa,
+          nobis, nisi, doloremque saepe pariatur nam necessitatibus eius
+          excepturi minima rerum soluta ducimus natus. Accusantium voluptate
+          voluptatem totam labore sequi in officiis, debitis eligendi. Quas esse
+          iure facilis? Voluptatem, voluptatibus nisi! Provident, maxime,
+          fugiat, quae assumenda unde eum officiis eligendi quo deleniti autem
+          quos minima dolore soluta excepturi nemo. Omnis culpa minima accusamus
+          error aliquid! Ab nisi quam ea, tenetur porro fuga magni ut recusandae
+          sequi sit adipisci veniam nostrum ad eaque soluta eos odio facere
+          ipsa, aliquid quis veritatis repudiandae. Voluptatem accusamus
+          consectetur officiis aut a ea adipisci deleniti, facere ratione eos
+          sit dolore omnis temporibus molestiae sunt quod tenetur magni aliquid
+          quasi doloribus perspiciatis alias illo nisi deserunt! Dolorem
+          laudantium quasi suscipit veniam cumque, minima praesentium iure
+          maiores totam magnam perferendis corporis. Repellat sequi blanditiis
+          quam excepturi, sunt asperiores illo quidem inventore, et ipsam eius
+          beatae quisquam adipisci consequatur quod repudiandae, corporis
+          perferendis fugit autem dolor. Minima, esse. Laborum?
+        </p>
+      </div>
+      <h3>Tab 2</h3>
+      <div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium
+          totam atque, dignissimos corrupti illum voluptate alias! Fugiat aut
+          aspernatur ad culpa neque eligendi rem consequatur praesentium
+          doloremque dicta, quasi, repellendus, est maiores voluptates sint
+          asperiores. Earum illo laboriosam eaque ratione distinctio tempora
+          cumque cupiditate neque odit excepturi nulla, iure aperiam impedit
+          voluptatibus accusantium quas accusamus nobis veritatis! Corporis
+          cumque laboriosam eius modi eaque nemo necessitatibus, similique
+          obcaecati eligendi possimus alias fugiat officiis temporibus deleniti
+          itaque ipsum quae quo repellendus excepturi voluptate neque eveniet
+          ex. Mollitia vitae quidem consequuntur? A repellat hic ex consequatur
+          aut vitae nihil doloribus reiciendis, facilis doloremque et saepe,
+          dolorum impedit. Officiis cum nemo tenetur non enim, voluptatibus
+          eaque autem a inventore eveniet id corrupti sint! Placeat dolores
+          omnis itaque iusto vel suscipit error corrupti explicabo et, cum illo,
+          temporibus aliquid tempore laborum laudantium accusamus cumque
+          architecto corporis nemo optio! Iusto quis culpa, aliquam voluptates
+          accusantium similique ullam, sint totam minima, distinctio nemo
+          commodi illum repellendus facilis? Natus, earum atque vero similique
+          facilis laborum incidunt ea iure, asperiores dignissimos velit sunt
+          aliquid ullam voluptatum excepturi porro exercitationem pariatur a
+          placeat repellendus iusto impedit ex? Porro maxime enim, ipsam iure
+          temporibus tempora error, unde nisi nihil magni cumque.\
+        </p>
+      </div>
+      <h3>Tab 3</h3>
+      <div>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam quo
+          hic pariatur, natus aliquam error tempore alias dolorem fugit qui ad
+          voluptatibus cum unde temporibus dolor, reiciendis laborum, corporis
+          eaque a. Expedita asperiores ipsam natus dolor. Esse minus dicta
+          ratione voluptates tempora illo sit, et impedit ut est deleniti
+          asperiores inventore nam doloribus molestias saepe quis harum aliquam
+          accusamus blanditiis neque. Aspernatur molestiae fugit aut odit at
+          ullam repellendus temporibus commodi quas minima laboriosam, ducimus
+          sequi est quae soluta nisi aliquam vel inventore? Perspiciatis dolores
+          distinctio nesciunt mollitia aliquid! Delectus nihil fugiat beatae
+          magni eligendi corrupti perferendis! Qui modi dolore quasi
+          exercitationem provident facilis dolor maxime sit neque, ab, dicta
+          iusto facere repellat, voluptatum nostrum placeat in numquam delectus
+          veritatis quas. Dolorem molestias quia, eligendi fugit, asperiores
+          quasi velit numquam dolorum amet iste magni alias illum dicta tempora
+          a, consectetur possimus minus harum quis voluptatem! Deserunt possimus
+          unde id, perspiciatis et dicta quo nostrum ab tempore repellendus?
+          Consequuntur maiores recusandae vel placeat illo et id, natus optio
+          eius harum, molestiae minus doloribus, doloremque veniam adipisci
+          quibusdam ullam similique. Consequatur quo alias officia tenetur,
+          molestias tempora doloremque sit debitis velit vel eos reprehenderit
+          in, nemo provident ipsam ratione minima blanditiis eaque!
+        </p>
+      </div>
+      <h3>Tab 4</h3>
+      <div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+          cum rem magni veniam hic libero fuga minima eaque dolor expedita,
+          pariatur dolorum laboriosam qui optio nesciunt ab sint commodi eos?
+          Magnam vel alias, voluptatum voluptatem tempore sed, amet optio hic,
+          corporis voluptatibus nobis cupiditate veniam voluptates quos? Commodi
+          vero nihil accusantium molestiae quisquam suscipit corrupti, cumque
+          porro illum dolor! Veritatis aliquam, iure laudantium necessitatibus
+          ipsum quasi nam porro provident quia hic vero laborum nobis aut ut
+          obcaecati eos commodi iusto delectus fuga! Aut perspiciatis fugit,
+          temporibus optio eos beatae adipisci magnam in, repellendus ab debitis
+          molestias quaerat eveniet quis eligendi, tenetur iste quibusdam modi
+          commodi. Exercitationem vitae possimus porro ad quo! Minus eveniet
+          saepe ducimus suscipit ipsum officiis dolorem asperiores magnam
+          inventore sequi laboriosam reiciendis accusamus aliquid
+          necessitatibus, repellat architecto rem, tempora nostrum! Accusamus
+          recusandae expedita ut numquam ullam suscipit nulla commodi provident
+          quae, natus minus exercitationem molestiae tempore veritatis atque
+          repellendus odit placeat magni. Aspernatur ad eos veniam suscipit quos
+          qui doloremque neque ea omnis laboriosam. Autem nihil exercitationem
+          sunt quia optio eaque sit quo ipsum expedita sequi quos necessitatibus
+          earum ducimus eius numquam doloremque, voluptatibus nesciunt illo
+          dignissimos voluptate! A, atque quibusdam. Repudiandae, adipisci?
+          Error libero inventore voluptas.
+        </p>
+      </div>
+    </div>
+    <hr />
+    <p>
+      Select Your Birthdate:
+      <input type="text" id="MyDOBPicker1" placeholder="Select DOB" />
+    </p>
+    <hr />
+    <p>
+      Select Your Birthdate:
+      <input type="text" id="MyDOBPicker2" placeholder="Select DOB" />
+    </p>
+    <hr>
+    <div id = "MyDiv" title="My Div Title..">
+        My Div Description
+        <input type="text" />
+   </div>
+   <button id = "MyButton">Click Here..</button>
+   <hr>
+   <p>
+    <label for="AgeValue">Enter Your Age:</label>
+    <input type="text" id="AgeValue" disabled="true"/>
+ </p>
+ 
+ <div id="AgeRangeSlider"></div>
+ 
+ <hr />
+
+ <div id = "PriceValue"></div>
+
+ <p>
+    <label for = "startvalue">Start Value:</label>
+    <input type = "text" id = "startvalue" disabled="true">
+ </p>
+ <p>
+    <label for = "endvalue">End Value:</label>
+    <input type = "text" id = "endvalue" disabled="true">
+ </p>
+ <p>
+    <label for = "changevalue">Change In Range:</label>
+    <input type = "text" id = "changevalue" disabled="true">
+ </p>
+ <p>
+    <label for = "slidevalue">Slide Gap Value:</label>
+    <input type = "text" id = "slidevalue" disabled="true">
+ </p>
+    <hr>
+    <div id = "example">
+         <input type = "text" id = "MyValueList" value = "0" />
+      </div>
+  </body>
+</html>
